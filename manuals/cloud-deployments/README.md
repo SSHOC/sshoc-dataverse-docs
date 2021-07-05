@@ -1,7 +1,10 @@
-﻿# Docker and Kubernetes infrastructure for Dataverse
+﻿# Cloud infrastructure for Dataverse
 
 ## Introduction
 
+Here you can find the manual on the Dataverse as a service deployment on AWS and Azure Cloud. CESSDA Cloud on Google Cloud Platform is still in progress...
+
+## Why Docker and Kubernetes?
 
 Docker is a really interesting and innovative technology. For software developers there is the most compelling reason to use Docker because it helps to solve this particular problem of making all of their environments much more consistent. If you’re using Docker, you build once and run anywhere, on any OS. 
 
