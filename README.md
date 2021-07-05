@@ -71,3 +71,7 @@ the process has two steps: adding fields into Dataverse then adding fields into 
 * (Core) Feedback Functionality for users (in general and on data level)
 * (Core) Compliance with CMM.
 
+## Cesare Concordia (CNR-ISTI, Italy)
+
+* (App) [CLARIN Switchboard](https://github.com/SSHOC/dataverse-lrs) integration 
+* (App) Dataverse as storage layer for Taverna Workflow System 
