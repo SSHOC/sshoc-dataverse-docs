@@ -1,9 +1,10 @@
+# External controlled vocabularies support for Dataverse
 ## Context
 This external controlled vocabularies functionality was developed by Data Archiving and Networked Services (DANS-KNAW), the Netherlands, and funded by [SSHOC](https://sshopencloud.eu/), "Social Sciences and Humanities Open Cloud". SSHOC has received funding from the European Union’s Horizon 2020 project call H2020-INFRAEOSC-04-2018, grant agreement #823782.
  
 Please watch [this online presentation](https://www.youtube.com/embed/g6-pVE3i_5I), read [the document with requirements](https://docs.google.com/document/d/1txdcFuxskRx_tLsDQ7KKLFTMR_r9IBhorDu3V_r445w/edit?ts=5fdbca9a) and join [Dataverse Working Group on Ontologies and Controlled Vocabularies](https://dataverse.org/community-calls) if you have some questions and want to contribute.
 
-Pull Requests: [#7712](https://github.com/IQSS/dataverse/pull/7712) [#7946](https://github.com/IQSS/dataverse/pull/7946)
+Pull Requests: [#7712](https://github.com/IQSS/dataverse/pull/7712), [#7946](https://github.com/IQSS/dataverse/pull/7946)
  
 ## Motivation
 (Note: the text below is adapted from an analysis document by @qqmyers and @4tikhonov. Some of the initial requirements have been dropped and a few others have been added.)
