@@ -46,20 +46,20 @@ Slava Tykhonov (DANS-KNAW, Netherlands)
 * (App) Edugain/SURFconext federated login support
 * (Core, App) Support of external controlled vocabularies (CESSDA CV Service)
 * (App) Extension of Plugin with support of other PID providers (Philipp: e.g. ISLRN; cf. http://islrn.org/)
-* (App) Development and integration of data previewers:
-* PDF preview
-* DDI Explorer
-* Text files
-* HTML preview
-* Spreadsheet 
-* Images
-* Video
-* Audio
-* JSON
-* GeoJSON/Shapefiles/Map
-* XML (?)
+* (App) Development and integration of extra [data previewers](https://github.com/SSHOC/dataverse-previewers) as addition to ones maintained by [Global Dataverse Community Consortium (GDCC)](http://github.com/gdcc/dataverse_tests):
+  * PDF preview
+  * DDI Explorer
+  * Text files
+  * HTML preview
+  * Spreadsheet 
+  * Images
+  * Video
+  * Audio
+  * JSON
+  * GeoJSON/Shapefiles/Map using [Apache Superset integration with Dataverse](https://github.com/SSHOC/dataverse-superset)
+  * XML (?)
 * (App) The integration of external storage applications in the Cloud (Swift Object Storage). Tomasz Parkoła comment: Ceph would be an option for us too, as we mainly use Ceph in our datacentre.
-* (Core) Adjustable pipeline for multilingual support (Weblate as candidate)
+* (Core) Adjustable pipeline for multilingual support based on [Weblate as a service](https://github.com/SSHOC/weblate-docker)
 * (Core, App) Archiving pipeline from Dataverse to another Trusted Digital Repositories (Dataverse Bridge to Fedora, Islandora, Zenodo)
 * (App) Development of Dataverse Metrics as a service (optional)
 * (Task) Helping Harvard to develop of Dataverse App Store website
@@ -71,7 +71,7 @@ Stefan Kasberger (AUSSDA, Austria)
 
 * (App) the development of [pyDataverse module](https://pydataverse.readthedocs.io/en/latest/) to support (meta)data migration tasks and automation
 * (App) NESSTAR migration tool, (DDI Converter](https://github.com/SSHOC/dataverse-ddi-converter-tool) development deployment on Root-Server via Docker. 
-* (Core) (Preview of data)[https://github.com/SSHOC/dataverse-previewers] (CSV, etc) for easy first understanding and exploration.
+* (Core) [Preview of data](https://github.com/SSHOC/dataverse-previewers) (CSV, etc) for easy first understanding and exploration.
 * (Core) Feedback Functionality for users (in general and on data level)
 * (Core) Compliance with CMM.
 
