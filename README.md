@@ -1,4 +1,4 @@
-# Social Sciences and Humantities Open Cloud Dataverse tasks
+# Social Sciences and Humantities Open Cloud (SSHOC) Dataverse tasks
 
 SSHOC Dataverse project, task 5.2 has a two parallel tracks of the development: 
 
@@ -70,7 +70,7 @@ Stefan Kasberger (AUSSDA, Austria)
 
 
 * (App) the development of [pyDataverse module](https://pydataverse.readthedocs.io/en/latest/) to support (meta)data migration tasks and automation
-* (App) NESSTAR migration tool, (DDI Converter](https://github.com/SSHOC/dataverse-ddi-converter-tool) development deployment on Root-Server via Docker. 
+* (App) NESSTAR migration tool, [DDI Converter](https://github.com/SSHOC/dataverse-ddi-converter-tool) development deployment on Root-Server via Docker. 
 * (Core) [Preview of data](https://github.com/SSHOC/dataverse-previewers) (CSV, etc) for easy first understanding and exploration.
 * (Core) Feedback Functionality for users (in general and on data level)
 * (Core) Compliance with CMM.
