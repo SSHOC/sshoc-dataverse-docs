@@ -20,14 +20,8 @@ When a developer spins up a new instance, in the cloud or on a new server, he wi
 
 When it’s done, the application is ready to go to production as the infrastructure will remain the same. Docker solves a problem of a lack of reproducibility. When a developer or sysadmin spins up that next server, he is a human who can make a mistake. So the conventional solution to this problem for the past years has been configuration management tools like Ansible (used by DANS). When you're using these tools, you just define a desired end state for your server using their specific configuration language. When a developer or sysadmin points those tools at a new server, they go off and configure everything automatically. And so these tools are great because it means once we've done the work to configure one server, it's much easier for us to take that work and apply it to subsequent servers, like to build a distributed network of Dataverses. But they all have the catch that you have to learn their specific technology, you have to know how to write an Ansible playbook to make them work. 
 
-
-
-
- Screen Shot 2018-01-24 at 14.48.08.png 
-
-
-
-## Picture 1. Docker images and containers
+![1](readme-imgs/image1.png "1")
+Picture 1. Docker images and containers
 
 
 When a developer needs to spin up a new server, he still has to wait for that configuration management tool to run and do all this work before he can actually get in there and use it all the way. Traditional virtual machines are most portable but have lots of overhead. VMs are the best choice if you know that wherever they run, they are going to behave the exact same way because they look like they are a full real computer. They're completely isolated from their host operating system.The virtual machines disk image size is the same disk image that you would need. 
@@ -50,11 +44,8 @@ We have a few possible workflows at DANS for the deployment of the Dataverse app
 
 Usually, a DANS developer writes some new code for commits, pushes it up to our git repo, and the master branch will get the most recent commit that the developer just pushed up. After that, our build server comes into action, pulls down that latest code and runs our test suite. And then if the pipeline passes, it will go on a server. Or if it's on a pull request, the dev team indicates the pull request is good to merge. One thing that's already kind of tricky about this situation is that you might not unless you're very careful, you might not have the same version of Postgres running in both of those environments. And this is especially tricky if you're working with a configuration that was provided by a third party (e.g. the dataverse Community) because understanding what exactly it does is far from trivial. 
 
-
- Screen Shot 2018-05-28 at 16.14.29.png 
-
+![2](readme-imgs/image2.png "2")
 Picture 2. Docker workflow based on Docker Hub registry 
-
 
 To update a Dataverse application deployed on a VM, someone from the dev or admin team would SSH into our server, deploy a new code and restart all the services. So in this workflow, the update process is running separately in all VMs (test, acceptance and production), and thus the Dataverse application should be tested again after applying changes. With Docker, the workflow looks a little bit different. There is an important component called the Docker registry. And on our development machine, we're running all three components of our stack. And we're not just running those little white circle processes, right on our native VM, we're running them inside Docker containers. 
 
@@ -124,8 +115,6 @@ Application specific issues include maintenance of all components of Dataverse: 
 3. Dataverse images should also be updated and redeployed when users report new bugs and when developers release patches Dataverse images also should be updated and redeployed again.
 4. SOLR search engine running in different container and should be also upgraded time after time, both software and schema (with Dataverse updates)
 5. Database (postgres) is a separate image and should be tested in order to check compliance with its data from the previous version.
- 
-
 
 ## Building Microservices for Dataverse
 
@@ -135,11 +124,8 @@ Microservice is a useful concept to talk againsts of a big monolith web applicat
 This is essentially the difference between a monolithic architecture and a microservices architecture that is valid for Dataverse. 
   
 
+![3](readme-imgs/image3.png "3")
 Picture 3. Dataverse deployment on Kubernetes in microservices framework
-
-
-________________
-
 
 ## Docker to Kubernetes path
 
