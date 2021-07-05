@@ -69,8 +69,9 @@ Slava Tykhonov (DANS-KNAW, Netherlands)
 Stefan Kasberger (AUSSDA, Austria)
 
 
-* (App) NESSTAR migration tool deployment on Root-Server via Docker. Use DataverseEU and make it sustainable.
-* (Core) Preview of data (CSV, etc) for easy first understanding and exploration.
+* (App) the development of [pyDataverse module](https://pydataverse.readthedocs.io/en/latest/) to support (meta)data migration tasks and automation
+* (App) NESSTAR migration tool, (DDI Converter](https://github.com/SSHOC/dataverse-ddi-converter-tool) development deployment on Root-Server via Docker. 
+* (Core) (Preview of data)[https://github.com/SSHOC/dataverse-previewers] (CSV, etc) for easy first understanding and exploration.
 * (Core) Feedback Functionality for users (in general and on data level)
 * (Core) Compliance with CMM.
 
