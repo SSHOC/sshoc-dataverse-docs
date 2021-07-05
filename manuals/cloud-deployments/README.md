@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Here you can find the manual on the Dataverse as a service deployment on AWS and Azure Cloud. CESSDA Cloud on Google Cloud Platform is still in progress...
+Here you can find the manual on the Dataverse as a service deployment on [AWS](README-AWS-Dataverse.md) and [Azure Cloud](README-Azure-Dataverse.md). CESSDA Cloud on Google Cloud Platform is still in progress...
 
 ## Why Docker and Kubernetes?
 
