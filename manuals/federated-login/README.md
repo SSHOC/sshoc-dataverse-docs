@@ -13,8 +13,8 @@ curl -X POST -H 'Content-type: application/json; charset=utf-8' --upload-file go
 
 ## Github
 
-![13](images/image12.png "13")
-![10](images/image12.png "10")
+![13](images/image13.png "13")
+![10](images/image10.png "10")
 
 Use this json file with own credentials:
 ```
